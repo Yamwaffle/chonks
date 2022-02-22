@@ -1,670 +1,605 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 h2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 159.58%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 159.58%;
 }
-
 h3 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 64px;
-    display: flex;
-    align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 64px;
+  display: flex;
+  align-items: center;
 }
-
 .navbar {
-    background: #00CCE7;
-    /*box-shadow: 0px 5px 10px;*/
+  background: #00CCE7;
+  /*box-shadow: 0px 5px 10px;*/
 }
 .navbar-nav {
-    align-items: center;
+  align-items: center;
 }
 .nav-link,
 .navbar-brand {
-    cursor: pointer;
+  cursor: pointer;
 }
 .nav-link {
-    margin-right: 1em !important;
-    color: black !important;
-    font-weight: 500;
+  margin-right: 1em !important;
+  color: black !important;
+  font-weight: 500;
 }
 .nav-link:hover {
-    color: rgb(122, 122, 122) !important;
-    transition-duration: 0.2s;
+  color: #7a7a7a !important;
+  transition-duration: 0.2s;
 }
 .navbar-collapse {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
-
-@media only screen and (max-width: 768px) {
-
-    body {
-        padding: 0;
-        margin: 0;
-        background: white;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        color: black;
-    }
-
-    .header {
-        padding-top: 125px;
-    }
-
-    h1 {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 32px;
-        line-height: 46px;
-        color: black;
-    }
-
-    .contract-address {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        font-family: Roboto;
-        font-style: normal;
-        color: white;
-        padding: 15px;
-        margin: 10px;
-        text-align: center;
-    }
-
-    .contract-address-text {
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 16px;
-    }
-
-    .contract-address-title {
-        font-weight: 900;
-        font-size: 12px;
-    }
-
-    #tokenomics {
-        padding-top: 25px;
-    }
-
-    #nft .nft-content {
-        text-align: center;
-    }
-
-    .modal-dialog {
-        max-width: 100%;
-    }
-    
-    .modal-content {
-        background-color: transparent;
-        margin: auto;
-        color: black;
-        border: none;
-    }
-
-    .profile-photo {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-    
-    .profile-content {
-        background-color: white;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        padding-top: 15px;
-    }
-    
-    .profile-content-text {
-        padding: 25px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 159.58%;
-        text-align: center;
-        color: #000000;
-    }
-    
-    #profileModal .profile-photo {
-        background-color: #F3C625;
-        padding: 0 25px 25px 25px;
-    }
+@keyframes bottom-up-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-200px);
+    opacity: 1;
+  }
 }
-
-@media only screen and (min-width: 769px) {
-
-    body {
-        padding: 0;
-        margin: 0;
-        background: white !important;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        width: 100%;
-        color: black;
-    }
-
-    .header {
-        padding-top: 150px;
-    }
-
-    h1 {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 64px;
-        color: black;
-    }
-
-    .contract-address {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        font-family: Roboto;
-        font-style: normal;
-        color: white;
-        padding: 15px;
-        margin: 10px;
-    }
-
-    .contract-address-text {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
-        padding-top: 5px;
-    }
-
-    .contract-address-title {
-        font-weight: 900;
-        font-size: 10px;
-        line-height: 12px;
-    }
-
-    #tokenomics {
-        padding-top: 25px;
-    }
-
-    .modal-dialog {
-        max-width: 976px;
-    }
-    
-    .modal-content {
-        background-color: transparent;
-        width: 976px;
-        height: 453px;
-        margin: auto;
-        color: black;
-        border: none;
-    }
-
-    .profile-thumb:hover img {
-        transform: translate3d(-50%, 0px, 0px);
-        margin: 0
-    }
-
-    .profile-photo {
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-    }
-    
-    .profile-content {
-        background-color: white;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        padding-top: 15px;
-    }
-    
-    .profile-content-text {
-        padding: 75px 30px 0 30px;
-    }
-    
-    #profileModal .profile-photo {
-        background-color: #F3C625;
-        padding: 45px;
-    }
-}
-
 #listedOn {
-    background: linear-gradient(180deg, #ffffff 0%, #2B413B 50%);
-    padding-top: 50px;
-    color: white;
-    padding-bottom: 50px;
+  background: linear-gradient(180deg, #ffffff 0%, #2B413B 50%);
+  padding-top: 50px;
+  color: white;
+  padding-bottom: 50px;
 }
-
 #about {
-    background: linear-gradient(180deg, #2B413B 0%, #217867 50%);
-    color: white;
+  background: linear-gradient(180deg, #2B413B 0%, #217867 50%);
+  color: white;
 }
-
 #tokenomics {
-    background: linear-gradient(180deg, #217867 0%, #76A99B 100%);
+  background: linear-gradient(180deg, #217867 0%, #76A99B 100%);
 }
-
 #buy {
-    background: linear-gradient(180deg, #76A99B 0%, white 100%);
-    margin-bottom: 35px;
+  background: linear-gradient(180deg, #76A99B 0%, white 100%);
+  margin-bottom: 35px;
 }
-
 .chonks-card-img img {
-    border-radius: 15px;
-    max-width: 100%;
-    border: 5px solid white;
+  border-radius: 15px;
+  max-width: 100%;
+  border: 5px solid white;
 }
-
 .listed-on {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 64px;
-    text-transform: uppercase;
-    color: white !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: white !important;
 }
-
 .headerTitle {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 64px;
-    color: black;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  color: black;
 }
-
 .headerTitleSub {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 64px;
-    color: #00CCE7;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  color: #00CCE7;
 }
-
 .headerTitleSm {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 50px;
-    /* or 133% */
-    color: black;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  /* or 133% */
+  color: black;
 }
-
 .headerTitleSubSm {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 64px;
-    /* or 133% */
-    color: #00CCE7;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 64px;
+  /* or 133% */
+  color: #00CCE7;
 }
-
 .overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
-
 .chonks-button {
-    font-size: 20px;
-    color: black;
-    border-radius: 7px;
-    background-color: #211e75;
-    padding-top: 10px;
-    display: inline-block;
-    width: 350px;
-    height: 80px;
+  font-size: 20px;
+  color: black;
+  border-radius: 7px;
+  background-color: #211e75;
+  padding-top: 10px;
+  display: inline-block;
+  width: 350px;
+  height: 80px;
 }
 .chonks-button:hover {
-    color: rgb(122, 122, 122) !important;
-    text-decoration: none;
+  color: #7a7a7a !important;
+  text-decoration: none;
 }
-
 .chonks-button-yellow {
-    background: #F3C625;
-    border-radius: 44px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: #000000 !important;
-    padding: 16px 35px;
-    border: none;
+  background: #F3C625;
+  border-radius: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000 !important;
+  padding: 16px 35px;
+  border: none;
 }
 .chonks-button-yellow:hover {
-    box-shadow: 0px 0px 14px 4px #CEBC5D;
-    text-decoration: none;
-    transition-duration: 0.2s;
-    color: #000000;
+  box-shadow: 0px 0px 14px 4px #CEBC5D;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  color: #000000;
 }
-
 .chonks-button-blue {
-    background: #00CCE7;
-    border-radius: 44px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: black !important;
-    padding: 20px;
+  background: #00CCE7;
+  border-radius: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: black !important;
+  padding: 20px;
 }
 .chonks-button-blue:hover {
-    box-shadow: 0px 0px 14px 4px #8CF8B7;
-    transition-duration: 0.2s;
-    text-decoration: none;
+  box-shadow: 0px 0px 14px 4px #8CF8B7;
+  transition-duration: 0.2s;
+  text-decoration: none;
 }
-
 .chonks-button-green {
-    background: #15C145;
-    border-radius: 44px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: black !important;
-    padding: 20px;
+  background: #15C145;
+  border-radius: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: black !important;
+  padding: 20px;
 }
 .chonks-button-green:hover {
-    box-shadow: 0px 0px 14px 4px #6D5DCE;
-    transition-duration: 0.2s;
-    text-decoration: none;
+  box-shadow: 0px 0px 14px 4px #6D5DCE;
+  transition-duration: 0.2s;
+  text-decoration: none;
 }
-
 .chonks-button-black {
-    background: #000000;
-    border-radius: 44px;
-    text-align: center;
-    color: white !important;
-    padding: 16px 35px !important;
+  background: #000000;
+  border-radius: 44px;
+  text-align: center;
+  color: white !important;
+  padding: 16px 35px !important;
 }
 .chonks-button-black:hover {
-    box-shadow: 0px 0px 14px 4px white;
-    text-decoration: none;
-    color: white !important;
+  box-shadow: 0px 0px 14px 4px white;
+  text-decoration: none;
+  color: white !important;
 }
-
 .chonks-button-blue-glow {
-    background: #07172E;
-    border: 3px solid #2081E2;
-    box-sizing: border-box;
-    border-radius: 100px;
-    padding: 20px;
-    color: black !important;
+  background: #07172E;
+  border: 3px solid #2081E2;
+  box-sizing: border-box;
+  border-radius: 100px;
+  padding: 20px;
+  color: black !important;
 }
 .chonks-button-blue-glow:hover {
-    box-shadow: 0px 0px 16px -2px #49C8FF;
-    color: black !important;
-    transition-duration: 0.2s;
-    text-decoration: none;
+  box-shadow: 0px 0px 16px -2px #49C8FF;
+  color: black !important;
+  transition-duration: 0.2s;
+  text-decoration: none;
 }
-
 .chonks-button-sm {
-    font-size: 20px;
-    color: black;
-    border-radius: 7px;
-    background-color: #211e75;
-    display: inline-block;
-    width: 150px;
-    height: 50px;
+  font-size: 20px;
+  color: black;
+  border-radius: 7px;
+  background-color: #211e75;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
 }
 .chonks-button-sm:hover {
-    color: rgb(122, 122, 122) !important;
-    transition-duration: 0.2s;
-    text-decoration: none;
+  color: #7a7a7a !important;
+  transition-duration: 0.2s;
+  text-decoration: none;
 }
-
 #tokenomics .distribution {
-    margin-top: 20px;
-    margin-bottom: 50px;;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
-#tokenomics .distribution .row{
-    margin-top: 20px;
+#tokenomics .distribution .row {
+  margin-top: 20px;
 }
-
 #team {
-    padding-top: 60px;
-    padding-bottom: 50px;
-    color: black;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  color: black;
 }
-
 #roadmap {
-    padding-top: 60px;
-    padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
-
 #team {
-    background: black;
+  background: black;
 }
-
 .profile-holder {
-	height:200px;
-    background:black;
-    margin: 0 auto;
+  height: 200px;
+  background: black;
+  margin: 0 auto;
 }
-
-.profile-thumb{
-    height: 200px;
-    width: 200px;
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    cursor: pointer;
-    position: relative;
+.profile-thumb {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
 }
-
 .profile-thumb img {
-    display: block;
-    height: 100%;
-    width: auto !important;
-    margin: 0 auto;
-    -moz-transition: all .6s;
-    -webkit-transition: all .6s;
-    transition: all .6s;
-    transform: translate3d(0px, 0px, 0px);
+  display: block;
+  height: 100%;
+  width: auto !important;
+  margin: 0 auto;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  transform: translate3d(0px, 0px, 0px);
 }
-
 .profile-name {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    font-feature-settings: 'liga' off;
-    color: #F7D35B;
-    margin-top: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  color: #F7D35B;
+  margin-top: 15px;
 }
-
 .profile-designation {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
-    text-align: center;
-    font-feature-settings: 'liga' off;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
 }
-
 .profile-social {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
-
 .profile-social hr {
-    width: 50% !important;
+  width: 50% !important;
 }
-
 .profile-social a:hover {
-    color: #F7D35B !important;
+  color: #F7D35B !important;
 }
-
 #contact {
-    padding-top: 45px;
+  padding-top: 45px;
 }
-
+#contact input[type="text"] {
+  height: 50px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #474747;
+  width: 100%;
+  padding-left: 15px;
+}
+#contact textarea {
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #474747;
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+}
 .social {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
-    color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: white;
 }
-
 .social .title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 56px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 56px;
 }
-
-.social ul, #team ul, #profileModal ul {
-    list-style-type: none;
-    padding-left: 0px;
+.social ul {
+  list-style-type: none;
+  padding-left: 0px;
 }
-.social li, #team li, #profileModal li{
-    display: inline-block;
-    margin: 0 25px;
-    text-align: center;
+.social li {
+  display: inline-block;
+  margin: 0 25px;
+  text-align: center;
 }
-.social a, #team ul a {
-    cursor: pointer;
-    color: white;
+.social a {
+  cursor: pointer;
+  color: white;
 }
 .social a:hover {
-    text-decoration: none;
-    transition-duration: 0.2s;
-    color: #F7D35B;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  color: #F7D35B;
 }
-
-#contact input[type="text"] {
-    height: 50px;
-    border: none;
-    border-radius: 7px;
-    font-size: 16px;
-    color: rgb(71, 71, 71);
-    width: 100%;
-    padding-left: 15px;
-}
-
-#contact textarea {
-    border: none;
-    border-radius: 7px;
-    font-size: 16px;
-    color: rgb(71, 71, 71);
-    width: 100%;
-    height: 100px;
-    padding: 15px;
-}
-
-
 .fa-15x {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
-
 hr {
-    width: 100%;
-    height: 0px;
-    left: 40px;
-    top: 5968px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 0px;
+  left: 40px;
+  top: 5968px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 footer {
-    padding-top: 15px;
-    background:rgb(121, 121, 121);
+  padding-top: 15px;
+  background: #797979;
 }
-
 .bottom-bar {
-    width: 100%;
-    height: 10px;
-    background: #00CCE7;
-    transform: matrix(1, 0, 0, -1, 0, 0);
+  width: 100%;
+  height: 10px;
+  background: #00CCE7;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
-
 .modal-body {
-    border-radius: 15px;
+  border-radius: 15px;
 }
-
-#profileModal .profile-photo .photo{
-    height: 250px;
-    width: 250px;
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    cursor: auto;
-    position: relative;
+#profileModal .profile-photo .photo {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: auto;
+  position: relative;
 }
-
-#profileModal .profile-photo .photo img{
-    display: block;
-    height: 100%;
-    width: auto !important;
-    margin: 0 auto;
+#profileModal .profile-photo .photo img {
+  display: block;
+  height: 100%;
+  width: auto !important;
+  margin: 0 auto;
 }
-
 #profileModal .profile-photo .profile-name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  color: #000000;
+}
+#profileModal .profile-photo .profilei-designation {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  color: #000000;
+}
+#profileModal ul a {
+  color: black;
+  cursor: pointer;
+}
+#profileModal .profile-social hr {
+  border: 1px solid #5B5B5B;
+  width: 80% !important;
+}
+#profileModal ul a:hover {
+  color: black!important;
+}
+.chonks-card {
+  background-color: lightgrey;
+  border-radius: 25px;
+  box-shadow: 3px 3px grey;
+  padding: 25px 15px 2px 15px;
+  height: 310px;
+  margin-bottom: 25px;
+  opacity: 0;
+  top: 200px;
+  position: relative;
+  transition: 2s ease;
+}
+.chonks-card.active {
+  will-change: transform;
+  transition-delay: 1s;
+  animation: bottom-up-fade 2s forwards ease;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: black;
+  }
+  .header {
+    padding-top: 125px;
+  }
+  h1 {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 46px;
+    color: black;
+  }
+  .contract-address {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    color: white;
+    padding: 15px;
+    margin: 10px;
     text-align: center;
-    font-feature-settings: 'liga' off;
-    color: #000000;
-}
-
-#profileModal .profile-photo .profilei-designation {
+  }
+  .contract-address-text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .contract-address-title {
+    font-weight: 900;
+    font-size: 12px;
+  }
+  #tokenomics {
+    padding-top: 25px;
+  }
+  #nft .nft-content {
+    text-align: center;
+  }
+  .modal-dialog {
+    max-width: 100%;
+  }
+  .modal-content {
+    background-color: transparent;
+    margin: auto;
+    color: black;
+    border: none;
+  }
+  .profile-photo {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .profile-content {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+  }
+  .profile-content-text {
+    padding: 25px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 159.58%;
     text-align: center;
-    font-feature-settings: 'liga' off;
     color: #000000;
+  }
+  #profileModal .profile-photo {
+    background-color: #F3C625;
+    padding: 0 25px 25px 25px;
+  }
 }
-
-#profileModal ul a {
+@media only screen and (min-width: 769px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 100%;
     color: black;
-    cursor: pointer;
-}
-
-#profileModal .profile-social hr {
-    border: 1px solid #5B5B5B;
-    width: 80% !important;
-}
-
-#profileModal ul a:hover {
-    color: black!important;
-}
-
-.chonks-card {
-    background-color: lightgrey;
-    border-radius: 25px;
-    box-shadow: 3px 3px grey;
-    padding: 25px 15px 2px 15px;
-    height: 310px;
-    margin-bottom: 25px;
+  }
+  .header {
+    padding-top: 150px;
+  }
+  h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    color: black;
+  }
+  .contract-address {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+  }
+  .contract-address-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 5px;
+  }
+  .contract-address-title {
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  #tokenomics {
+    padding-top: 25px;
+  }
+  .modal-dialog {
+    max-width: 976px;
+  }
+  .modal-content {
+    background-color: transparent;
+    width: 976px;
+    height: 453px;
+    margin: auto;
+    color: black;
+    border: none;
+  }
+  .profile-thumb:hover img {
+    transform: translate3d(-50%, 0px, 0px);
+    margin: 0;
+  }
+  .profile-photo {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .profile-content {
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+  }
+  .profile-content-text {
+    padding: 75px 30px 0 30px;
+  }
+  #profileModal .profile-photo {
+    background-color: #F3C625;
+    padding: 45px;
+  }
 }
