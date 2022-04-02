@@ -67,10 +67,14 @@ h3 {
   background: linear-gradient(180deg, #76A99B 0%, white 100%);
   margin-bottom: 35px;
 }
+#faq {
+  margin-bottom: 35px;
+}
 .chonks-card-img img {
   border-radius: 15px;
   max-width: 100%;
   border: 5px solid white;
+  background-color: #b8b8b8;
 }
 .listed-on {
   font-family: Montserrat;
